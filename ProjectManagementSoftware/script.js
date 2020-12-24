@@ -254,7 +254,7 @@ core1.addTask('Study Mobile Device Flashcards', 168, false);
 core1.displayAll();
 
 
-let angularChallenge100 = new Project('100 Angular Challenge', 30);
+let angularChallenge100 = new Project('Udemy - 100 Angular Challenge', 30);
 angularChallenge100.addTask('Section 1: Introduction', 9, false);
 angularChallenge100.addTask('Section 1: Tools We Use', 3, false);
 
