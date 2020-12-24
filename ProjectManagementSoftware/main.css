@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ body {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-color: darkred;
+     padding-top: 120px;
+     min-width: 320px;
+     overflow-x: hidden;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ body nav {
+     position: fixed;
+     top: 0;
+     left: 0;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     flex-wrap: wrap;
+     border: 2px solid white;
+     width: 100%;
+     height: auto;
+     box-sizing: border-box;
+     background: white;
+     padding: 10px 15px;
+     border-bottom-color: black;
+     border-bottom-style: solid;
+     border-bottom-width: 4px;
+     border-right-color: white;
+     min-width: 320px;
+ }
+
+
+ @media (max-width: 774px) {
+     body nav {
+         justify-content: flex-start;
+     }
+ }
+
+ body nav a {
+     margin: 5px 15px;
+     font-size: 1.1rem;
+     font-weight: 600;
+     text-decoration: none;
+     color: darkred;
+     text-shadow: 0px 0px 0px white;
+     transition: color .25s ease, transform .25s ease, text-shadow .25s ease;
+ }
+
+ body nav a:hover {
+    color: black;
+    transform: translateY(-1px);
+    text-shadow: 3px 4px 5px #aaaaaa;
+ }
+
+ body h1 {
+     margin-bottom: 100px;
+     color: white;
+     font-size: 2.5rem;
+     letter-spacing: 1px;
+ }
+
+main#root {
+    width: 100%;
+    height: auto;
+}
+
+main#root div {
+    width: 80%;
+    height: auto;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px inset white;
+    padding: 50px 30px;
+}
+
+main#root div h2 {
+    padding: 25px;
+    align-self: flex-start;
+    font-size: 2.0rem;
+}
+
+main#root div h2:nth-of-type(2) {
+    font-size: 1.5rem;
+}
+
+main#root div p {
+    font-size: 3.0rem;
+}
+
+main#root div progress {
+    width: 60%;
+    height: 40px;
+}
+
+main#root div table {
+    width: 80%;
+    margin: 5px auto;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: white;
+    text-align: center;
+}
+
+main#root div table tbody tr td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+main#root div table tbody tr td:nth-of-type(2) {
+    text-align: left;
+}
+
+main#root div table tbody tr.isComplete {
+    background-color: lightgreen;
+}
+
+main#root div table tbody tr td p {
+    font-size: 1.0rem;
+    margin-bottom: 1px;
+}
+
+main#root div table tbody tr td p.isComplete {
+    background-color: lightgreen;
+}
