@@ -273,18 +273,3 @@ webDevBootCamp.addTask('Photo Blog CodeAlong Pt.1', 9, false);
 webDevBootCamp.addTask('Photo Blog CodeAlong Pt.2', 9, false);
 
 webDevBootCamp.displayAll();
-
-
-// read book
-
-let book = new Project('Book', 20);
-book.addTask('read ch1', 30, false);
-book.addTask('read ch2', 40, false);
-book.addTask('read ch3', 30, false);
-book.addTask('read ch4', 60, false);
-book.addTask('read ch5', 70, false);
-book.addTask('read ch6', 80, false);
-book.addTask('read ch7', 20, false);
-book.addTask('read ch8', 20, false);
-book.addTask('read ch9', 40, false);
-book.displayAll();
