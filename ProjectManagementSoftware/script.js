@@ -246,9 +246,9 @@ class Project {
 let core1 = new Project('CompTIA(220 - 1001) Class', 120);
 core1.addTask('Write Mobile Device (Test Prep) Flashcards', 84, true);
 core1.addTask('Write Networking (Test Prep) Flashcards', 110, true);
-core1.addTask('Write Hardware (Test Prep) Flashcards', 282, false);
-core1.addTask('Write Virtualization and Cloud Computing (Test Prep) Flashcards', 20, false);
-core1.addTask('Write Hardware and Networking Troubleshooting (Test Prep) Flashcards', 220, false);
+core1.addTask('Write Hardware (Test Prep) Flashcards', 282, true);
+core1.addTask('Write Virtualization and Cloud Computing (Test Prep) Flashcards', 20, true);
+core1.addTask('Write Hardware and Networking Troubleshooting (Test Prep) Flashcards', 220, true);
 
 core1.addTask('Messer - 1.1 - Laptop Hardware', 21, false); 
 core1.addTask('Messer - 1.2 - Laptop Displays', 8, false);
