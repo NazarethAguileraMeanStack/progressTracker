@@ -250,7 +250,7 @@ core1.addTask('Write Hardware (Test Prep) Flashcards', 282, true);
 core1.addTask('Write Virtualization and Cloud Computing (Test Prep) Flashcards', 20, true);
 core1.addTask('Write Hardware and Networking Troubleshooting (Test Prep) Flashcards', 220, true);
 
-core1.addTask('Messer - 1.1 - Laptop Hardware', 21, false); 
+core1.addTask('Messer - 1.1 - Laptop Hardware', 21, true); 
 core1.addTask('Messer - 1.2 - Laptop Displays', 8, false);
 core1.addTask('Messer - 1.3 - Laptop Features', 10, false);
 core1.addTask('Messer - 1.4 - Mobile Devices', 6, false);
