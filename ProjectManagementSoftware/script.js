@@ -59,7 +59,12 @@ class Project {
             },
             taskListTable: function(projectName, numOfTasks, tasksArray, totalDuration) {
                 let section = document.getElementById(`${projectName}`);
+                let header = document.createElement('h2');
+                header.innerHTML = `<span class='table-toggle'> + </span>Click to view full Task Breakdown Table`;
+                section.appendChild(header);
                 let table = document.createElement('table');
+                table.setAttribute('id', `${projectName}-taskListTable`);
+                table.setAttribute('style', 'display: none;');
                 table.innerHTML = `<thead>
                 <th>#</th>
                 <th>Task Name</th>
@@ -236,10 +241,8 @@ class Project {
         this.displayTaskDistribution();
     }
 
-
-
-
 }
+
 
 
 // CompTIA(220 - 1001) Class
@@ -422,7 +425,7 @@ core1.displayAll();
 
 
 // 100 Angular Components
-let angularChallenge100 = new Project('Udemy - 100 Angular Challenge', 45);
+let angularChallenge100 = new Project('Udemy - 100 Angular Challenge', 35);
 angularChallenge100.addTask('Section 1: Introduction', 9, false);
 angularChallenge100.addTask('Section 1: Tools We Use', 3, false);
 
@@ -778,6 +781,102 @@ webDevBootCamp.addTask('Section 27: Creating our own promises', 13, false);
 webDevBootCamp.addTask('Section 27: The Async Keyword', 13, false);
 webDevBootCamp.addTask('Section 27: The Await Keyword', 10, false);
 webDevBootCamp.addTask('Section 27: Handling Errors in Async Functions', 6, false);
+
+webDevBootCamp.addTask('Section 28: What matters in this section', 4, false);
+webDevBootCamp.addTask('Section 28: Intro to AJAX', 10, false);
+webDevBootCamp.addTask('Section 28: Intro to APIs', 12, false);
+webDevBootCamp.addTask('Section 28: WTF is JSON', 10, false);
+webDevBootCamp.addTask('Section 28: Using Postman', 13, false);
+webDevBootCamp.addTask('Section 28: Query Strings & Headers', 14, false);
+webDevBootCamp.addTask('Section 28: Making XHRs', 7, false);
+webDevBootCamp.addTask('Section 28: The Fetch API', 11, false);
+webDevBootCamp.addTask('Section 28: Intro to Axios', 9, false);
+webDevBootCamp.addTask('Section 28: Setting Headers with Axios', 13, false);
+webDevBootCamp.addTask('Section 28: TV show search app', 18, false);
+
+webDevBootCamp.addTask('Section 29: What Matters in this section', 7, false);
+webDevBootCamp.addTask('Section 29: What on Earth are prototypes', 14, false);
+webDevBootCamp.addTask('Section 29: Intro to Object Oriented Programming', 9, false);
+webDevBootCamp.addTask('Section 29: Factory Functions', 11, false);
+webDevBootCamp.addTask('Section 29: Constructor Functions', 19, false);
+webDevBootCamp.addTask('Section 29: Javascript Classes', 17, false);
+webDevBootCamp.addTask('Section 29: More Classes Practice', 10, false);
+webDevBootCamp.addTask('Section 29: Extends and Super Keywords', 12, false);
+
+webDevBootCamp.addTask('Section 30: What matters in this section', 6, false);
+webDevBootCamp.addTask('Section 30: Backend Overview', 6, false);
+webDevBootCamp.addTask('Section 30: A Pep Talk on Terminal', 6, false);
+webDevBootCamp.addTask('Section 30: Why do we need to know terminal commands?', 11, false);
+webDevBootCamp.addTask('Section 30: Windows Terminal Installation Instructions', 1, false);
+webDevBootCamp.addTask('Section 30: The Basics: LS & PWD', 7, false);
+webDevBootCamp.addTask('Section 30: Changing Directories', 7, false);
+webDevBootCamp.addTask('Section 30: Relative Vs. Absolute Paths', 8, false);
+webDevBootCamp.addTask('Section 30: Making Directories', 5, false);
+webDevBootCamp.addTask('Section 30: Man Pages and Flags', 8, false);
+webDevBootCamp.addTask('Section 30: The touch command', 6, false);
+webDevBootCamp.addTask('Section 30: Removing Files & Folders', 8, false);
+
+webDevBootCamp.addTask('Section 31: What matters in this section', 5, false);
+webDevBootCamp.addTask('Section 31: Introducing Node JS', 8, false);
+webDevBootCamp.addTask('Section 31: What is Node Used for?', 7, false);
+webDevBootCamp.addTask('Section 31: Installing Node', 4, false);
+webDevBootCamp.addTask('Section 31: The Node REPL', 7, false);
+webDevBootCamp.addTask('Section 31: Running Node Files', 5, false);
+webDevBootCamp.addTask('Section 31: Process & Argv', 10, false);
+webDevBootCamp.addTask('Section 31: File System Module Crash Course', 17, false);
+
+webDevBootCamp.addTask('Section 32: What matters in this section', 5, false);
+webDevBootCamp.addTask('Section 32: Working with module.exports', 12, false);
+webDevBootCamp.addTask('Section 32: Requiring a directory', 8, false);
+webDevBootCamp.addTask('Section 32: Introducing NPM', 5, false);
+webDevBootCamp.addTask('Section 32: Installing Packages - Jokes & Rainbow', 10, false);
+webDevBootCamp.addTask('Section 32: Adding Global Packages', 8, false);
+webDevBootCamp.addTask('Section 32: The All-Important Package.json', 10, false);
+webDevBootCamp.addTask('Section 32: Installing All dependencies for a project', 8, false);
+webDevBootCamp.addTask('Section 32: Language Guesser Challenge', 12, false);
+
+webDevBootCamp.addTask('Section 33: What Matters in this Section', 5, false);
+webDevBootCamp.addTask('Section 33: Introducing Express', 8, false);
+webDevBootCamp.addTask('Section 33: Our very first express app', 12, false);
+webDevBootCamp.addTask('Section 33: The Request & Response Objects', 10, false);
+webDevBootCamp.addTask('Section 33: Express Routing Basics', 12, false);
+webDevBootCamp.addTask('Section 33: Express Path Paramters', 11, false);
+webDevBootCamp.addTask('Section 33: Working with Query Strings', 7, false);
+webDevBootCamp.addTask('Section 33: Auto-Restart with Nodemon', 6, false);
+
+webDevBootCamp.addTask('Section 34: What matters in this section', 5, false);
+webDevBootCamp.addTask('Section 34: What is templating?', 8, false);
+webDevBootCamp.addTask('Section 34: Configuring Express for EJS', 8, false);
+webDevBootCamp.addTask('Section 34: Setting the Views Directory', 7, false);
+webDevBootCamp.addTask('Section 34: EJS Interpolation Syntax', 5, false);
+webDevBootCamp.addTask('Section 34: Passing Data to Templates', 6, false);
+webDevBootCamp.addTask('Section 34: Subreddit Template Demo', 5, false);
+webDevBootCamp.addTask('Section 34: Conditionals in EJS', 9, false);
+webDevBootCamp.addTask('Section 34: Loops in EJS', 8, false);
+webDevBootCamp.addTask('Section 34: A more complex subreddit Demo', 13, false);
+webDevBootCamp.addTask('Section 34: Serving Static Assets in Express', 9, false);
+webDevBootCamp.addTask('Section 34: Bootstrap + Express', 10, false);
+webDevBootCamp.addTask('Section 34: EJS & Partials', 12, false);
+
+webDevBootCamp.addTask('Section 35: What Matters In This Section', 6, false);
+webDevBootCamp.addTask('Section 35: Get Vs Post Requests', 9, false);
+webDevBootCamp.addTask('Section 35: Defining Express Post Routes', 6, false);
+webDevBootCamp.addTask('Section 35: Parsing the Request Body', 8, false);
+webDevBootCamp.addTask('Section 35: Intro to REST', 10, false);
+webDevBootCamp.addTask('Section 35: RESTful Commends Overview', 7, false);
+webDevBootCamp.addTask('Section 35: RESTful Commends Index', 9, false);
+webDevBootCamp.addTask('Section 35: RESTful Commends New', 10, false);
+webDevBootCamp.addTask('Section 35: Express Redirects', 8, false);
+webDevBootCamp.addTask('Section 35: RESTful Commends Show', 14, false);
+webDevBootCamp.addTask('Section 35: The UUID Package', 7, false);
+webDevBootCamp.addTask('Section 35: RESTful Commends Update', 13, false);
+webDevBootCamp.addTask('Section 35: Express Method Override', 14, false);
+webDevBootCamp.addTask('Section 35: RESTful Comments Delete', 12, false);
+
+
+
+
+
 
 
 webDevBootCamp.displayAll();
