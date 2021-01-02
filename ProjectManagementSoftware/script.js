@@ -427,15 +427,15 @@ core1.displayAll();
 
 
 // 100 Angular Components
-let angularChallenge100 = new Project('Udemy - 100 Angular Challenge', 35);
-angularChallenge100.addTask('Section 1: Introduction', 9, false);
-angularChallenge100.addTask('Section 1: Tools We Use', 3, false);
+let angularChallenge100 = new Project('Udemy - 100 Angular Challenge', 30);
+angularChallenge100.addTask('Section 1: Introduction', 9, true);
+angularChallenge100.addTask('Section 1: Tools We Use', 3, true);
 
-angularChallenge100.addTask('Section 2: Github Repo / Source Code', 3, false);
-angularChallenge100.addTask('Section 2: Updating Information', 3, false);
-angularChallenge100.addTask('Section 2: Creating a New Project with Angular CLI', 4, false);
-angularChallenge100.addTask('Section 2: Updating Versions', 5, false);
-angularChallenge100.addTask('Section 2: Understanding Our Configuration', 6, false);
+angularChallenge100.addTask('Section 2: Github Repo / Source Code', 3, true);
+angularChallenge100.addTask('Section 2: Updating Information', 3, true);
+angularChallenge100.addTask('Section 2: Creating a New Project with Angular CLI', 4, true);
+angularChallenge100.addTask('Section 2: Updating Versions', 5, true);
+angularChallenge100.addTask('Section 2: Understanding Our Configuration', 6, true);
 angularChallenge100.addTask('Section 2: Understanding our src setup', 7, false);
 angularChallenge100.addTask('Section 2: Generating Components with CLI', 4, false);
 angularChallenge100.addTask('Section 2: Configuring ng generate component to use scss', 5, false);
