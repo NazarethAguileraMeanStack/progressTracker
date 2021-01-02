@@ -436,11 +436,11 @@ angularChallenge100.addTask('Section 2: Updating Information', 3, true);
 angularChallenge100.addTask('Section 2: Creating a New Project with Angular CLI', 4, true);
 angularChallenge100.addTask('Section 2: Updating Versions', 5, true);
 angularChallenge100.addTask('Section 2: Understanding Our Configuration', 6, true);
-angularChallenge100.addTask('Section 2: Understanding our src setup', 7, false);
-angularChallenge100.addTask('Section 2: Generating Components with CLI', 4, false);
-angularChallenge100.addTask('Section 2: Configuring ng generate component to use scss', 5, false);
-angularChallenge100.addTask('Section 2: Converting Application to SCSS', 3, false);
-angularChallenge100.addTask('Section 2: How to Succeed with this Course', 3, false);
+angularChallenge100.addTask('Section 2: Understanding our src setup', 7, true);
+angularChallenge100.addTask('Section 2: Generating Components with CLI', 4, true);
+angularChallenge100.addTask('Section 2: Configuring ng generate component to use scss', 5, true);
+angularChallenge100.addTask('Section 2: Converting Application to SCSS', 3, true);
+angularChallenge100.addTask('Section 2: How to Succeed with this Course', 3, true);
 
 angularChallenge100.addTask('Section 3: Basic Toolbar', 15, false);
 angularChallenge100.addTask('Section 3: Card', 15, false);
