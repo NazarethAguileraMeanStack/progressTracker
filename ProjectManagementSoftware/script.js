@@ -329,10 +329,10 @@ core1.addTask('Messer - Troubleshooting Networks', 17, true);
 
 core1.addTask('Messer x3 Review Notes', 180, false);
 
-core1.addTask('Study x3 Mobile Device Flashcards', 90, false);
-core1.addTask('Study x3 Networking Flashcards', 218, false);
+core1.addTask('Study x3 Mobile Device Flashcards', 90, true);
+core1.addTask('Study x3 Networking Flashcards', 218, true);
 core1.addTask('Study x3 Hardware Flashcards', 396, false);
-core1.addTask('Study x3 Virtualization and Cloud Computing Flashcards', 23, false);
+core1.addTask('Study x3 Virtualization and Cloud Computing Flashcards', 23, true);
 core1.addTask('Study x3 Hardware and Networking Troubleshooting Flashcards', 226, false);
 core1.addTask('Study x3 Mobile Device (Test Prep) Flashcards', 151, false);
 core1.addTask('Study x3 Networking (Test Prep) Flashcards', 198, false);
@@ -442,10 +442,10 @@ angularChallenge100.addTask('Section 2: Configuring ng generate component to use
 angularChallenge100.addTask('Section 2: Converting Application to SCSS', 3, true);
 angularChallenge100.addTask('Section 2: How to Succeed with this Course', 3, true);
 
-angularChallenge100.addTask('Section 3: Basic Toolbar', 15, false);
-angularChallenge100.addTask('Section 3: Card', 15, false);
-angularChallenge100.addTask('Section 3: Accordion', 17, false);
-angularChallenge100.addTask('Section 3: Progress Bar', 13, false);
+angularChallenge100.addTask('Section 3: Basic Toolbar', 15, true);
+angularChallenge100.addTask('Section 3: Card', 15, true);
+angularChallenge100.addTask('Section 3: Accordion', 17, true);
+angularChallenge100.addTask('Section 3: Progress Bar', 13, true);
 angularChallenge100.addTask('Section 3: Star Ratings', 15, false);
 angularChallenge100.addTask('Section 3: Top of Page', 15, false);
 angularChallenge100.addTask('Section 3: A. Basic Routing Setup', 11, false);
